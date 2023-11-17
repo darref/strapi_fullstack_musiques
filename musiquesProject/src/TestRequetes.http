@@ -1,0 +1,28 @@
+GET http://localhost:1337/api/musiques?populate=*
+###
+GET http://localhost:1337/api/musiques?populate=*&filters[Fav][$eq]=false
+###
+GET http://localhost:1337/api/musiques?populate=*&sort=Song:asc
+###
+POST http://localhost:1337/api/musiques
+Content-Type: application/json
+
+{ "data": 
+    {
+    "singer" : 1 ,
+    "Song": "Bad card",
+    "YoutubeLink": "https://www.youtube.com/watch?v=PImR07Vmong",
+    "RealeaseDate": "1991-01-01",
+    "Color":"#134522",
+    "Fav" : "true"
+    }
+}
+
+###
+POST  http://localhost:1337/api/auth/local
+content-type: application/json
+
+{
+    "identifier": "xxxxx",
+    "password": "xxxxxxxxx@"
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "singers",
+  "info": {
+    "singularName": "singer",
+    "pluralName": "singers",
+    "displayName": "Singer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Firstname": {
+      "type": "string"
+    },
+    "Birthday": {
+      "type": "date"
+    }
+  }
+}
